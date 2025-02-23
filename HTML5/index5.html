@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Form</title>
+</head>
+
+<body>
+    <h2>This is HTML From</h2>
+    <form action="backend.php">
+        <div>
+            Name: <input type="text" name="myName">
+        </div>
+        <br>
+        <div>
+            Roll: <input type="text" name="myRoll">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date:<input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Number:<input type="number" name="myNumber">
+        </div>
+        <br>
+        <div>
+            Male <input type="radio" name="myGander"> FeMale <input type="radio" name="myGander">
+        </div>
+        <br>
+        <label for="ac">Are you already 18 </label>
+        <div>
+            <input type="checkbox" name="ageCondition" id="ac">
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="Reset">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+        <div>
+            Write yourself:<br><textarea name="myAbout" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <label for="car">Car</label>
+        <div>
+            <select name="myCar" id="car">
+                <option value="tata">Tata</option>
+                <option value="swf">Swift</option>
+            </select>
+        </div>
+
+    </form>
+</body>
+
+</html>
