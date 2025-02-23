@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+/* Whole page */
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #42455a;
+}
+
+
+/* nav-menu-bar section */
+
+nav ul {
+    display: inline-flex;
+    margin: 50px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #b3b1b1;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/* page logo section */
+
+.logo img {
+    width: 30px;
+    margin-top: -7px;
+    margin-right: 48px;
+}
+
+.active {
+    color: #19dafa !important;
+}
+
+
+/* singup button seation */
+
+.singup-btn {
+    top: 40px;
+    right: 80px;
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da, #19d7f8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.singup-btn:hover {
+    background: radial-gradient(circle at top left, #fd00da, #19d7f8);
+}
+
+.singup-btn span {
+    display: block;
+    padding: 8px 22px;
+}
+
+main {
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 130px;
+    position: absolute;
+    color: #fff;
+}
+
+section {
+    width: 50%;
+    float: left;
+    margin-top: -20px;
+}
+
+
+/* Text area section */
+
+section h1 {
+    font-size: 43px;
+    width: 640px;
+    position: relative;
+    margin: 40px;
+}
+
+section p {
+    width: 650px;
+    font-size: 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #919191;
+}
+
+
+/* Game section */
+
+:root {
+    --background: #005;
+    --primary: #88D5BF;
+    --secondary: #5D6BF8;
+    --third: #e27fcb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.game {
+    align-items: center;
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    padding-left: 200px;
+    padding-bottom: 100px;
+}
+
+.shape {
+    background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+    animation: morph 8s ease-in-out infinite;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    height: 300px;
+    transition: all 1s ease-in-out;
+    width: 300px;
+    z-index: 5;
+}
+
+@keyframes morph {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+    }
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+    }
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+    }
+}
+
+
+/* play button section */
+
+.play-btn {
+    margin-left: 40px;
+    display: inline-flex;
+}
+
+.play-btn-inner {
+    height: 50px;
+    width: 50px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da, #19d7f8);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    text-align: center;
+}
+
+.play-btn-inner .fa {
+    padding: 18px 0;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+/* footer section */
+
+footer {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #db1bf6, #19d7f8);
+}
+
+footer ul {
+    display: inline-flex;
+    margin: 30px auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer ul li {
+    list-style: none;
+    margin: 0 50px;
+    cursor: pointer;
+}
+
+footer ul li .fa {
+    font-size: 25px;
+    color: #fff;
+}
+
+.footer ul li p {
+    margin-top: 15px;
+    font-size: 10px;
+    color: #fff;
+}
+
+
+/* socail media section */
+
+.social-icons {
+    right: 72px;
+    bottom: 35px;
+    position: absolute;
+}
+
+.social-icons ul li {
+    list-style: none;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.social-icons ul li a {
+    color: #999;
+    border-radius: 50%;
+    border: 1px solid #999;
+    display: block;
+    padding: 4px;
+}
+
+.social-icons ul li :hover {
+    background-color: orange;
+    color: white;
+}
